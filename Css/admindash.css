@@ -1,0 +1,1069 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #111827;
+    color: white;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+.admin-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #374151;
+}
+
+.admin-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.admin-logo h2 {
+    font-size: 22px;
+}
+
+
+/* SIDEBAR MENU */
+
+.sidebar ul {
+    list-style: none;
+
+    margin-top: 25px;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 13px 14px;
+
+    margin-bottom: 7px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    background: #1f2937;
+}
+
+.sidebar li.active {
+    background: #2563eb;
+}
+
+.sidebar li i {
+    width: 20px;
+
+    text-align: center;
+}
+
+
+/* LOGOUT */
+
+.sidebar .logout {
+    margin-top: 25px;
+
+    color: #f87171;
+}
+
+.sidebar .logout:hover {
+    background: #7f1d1d;
+    color: white;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.topbar h1 {
+    font-size: 30px;
+
+    font-weight: 600;
+}
+
+.topbar p {
+    color: #6b7280;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+.admin-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    padding: 8px 15px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.admin-profile i {
+    font-size: 32px;
+
+    color: #2563eb;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card > i {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 24px;
+}
+
+.stat-card p {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.stat-card h2 {
+    margin-top: 4px;
+
+    font-size: 26px;
+}
+
+
+/* ================= EXTRA INFO ================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+.info-card {
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.info-card h1 {
+    font-size: 30px;
+}
+
+.info-card p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* ================= RECENT BOOKINGS ================= */
+
+.recent {
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+}
+
+.section-header button {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.section-header button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================= TABLE ================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 14px;
+}
+
+th {
+    color: #6b7280;
+
+    font-weight: 500;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+
+/* ================= STATUS ================= */
+
+.confirmed,
+.pending,
+.completed {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+.confirmed {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+.pending {
+    background: #fef3c7;
+
+    color: #b45309;
+}
+
+.completed {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .sidebar {
+        width: 70px;
+
+        padding: 15px 10px;
+    }
+
+    .admin-logo {
+        justify-content: center;
+    }
+
+    .admin-logo h2 {
+        display: none;
+    }
+
+    .sidebar li span {
+        display: none;
+    }
+
+    .sidebar li {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 70px;
+
+        width: calc(100% - 70px);
+
+        padding: 20px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .admin-profile span {
+        display: none;
+    }
+
+    .recent {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
+/* ===============================
+   USERS MANAGEMENT
+================================ */
+
+.users-section {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.users-section .section-header {
+    margin-bottom: 20px;
+}
+
+.users-section .section-header h2 {
+    margin-bottom: 5px;
+}
+
+.users-section .section-header p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   USER SUMMARY CARDS
+================================ */
+
+.user-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.user-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fc;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+}
+
+.user-stat-card i {
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+.user-stat-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.user-stat-card h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+
+
+/* ===============================
+   USERS TABLE
+================================ */
+
+.users-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.users-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th {
+    background: #f5f6fa;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.users-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+.users-table tr:hover {
+    background: #fafafa;
+}
+
+
+/* ===============================
+   USER STATUS
+================================ */
+
+.user-active {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.user-blocked {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ===============================
+   BLOCK BUTTON
+================================ */
+
+.block-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.block-btn:hover {
+    background: #dc2626;
+}
+
+
+/* ===============================
+   UNBLOCK BUTTON
+================================ */
+
+.unblock-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.unblock-btn:hover {
+    background: #16a34a;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .user-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .users-table {
+        overflow-x: auto;
+    }
+
+}
+
+/* =========================
+   OWNER TABLE SECTION
+========================= */
+
+.owner-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+}
+
+.owner-section h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TABLE CONTAINER
+========================= */
+
+.owner-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================
+   OWNER TABLE
+========================= */
+
+.owner-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    background: #ffffff;
+}
+
+.owner-table thead {
+    background: #111827;
+}
+
+.owner-table thead th {
+    color: #ffffff;
+    padding: 15px 18px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.owner-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+}
+
+.owner-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.owner-table tbody td {
+    padding: 15px 18px;
+    color: #374151;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+/* =========================
+   OWNER PROFILE
+========================= */
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.owner-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e5e7eb;
+}
+
+.owner-name {
+    font-weight: 600;
+    color: #111827;
+}
+
+.owner-email {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.owner-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.owner-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.owner-status.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.owner-status.blocked {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.owner-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.owner-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.view-owner {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.view-owner:hover {
+    background: #bae6fd;
+}
+
+.edit-owner {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.edit-owner:hover {
+    background: #fde68a;
+}
+
+.delete-owner {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-owner:hover {
+    background: #fecaca;
+}
+
+
+/* =========================
+   ADD OWNER BUTTON
+========================= */
+
+.add-owner-btn {
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.add-owner-btn:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.owner-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.owner-search input {
+    width: 280px;
+    padding: 11px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.owner-search input:focus {
+    border-color: #111827;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .owner-section {
+        padding: 18px;
+    }
+
+    .owner-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .owner-search input {
+        width: 100%;
+    }
+
+    .add-owner-btn {
+        width: 100%;
+    }
+
+    .owner-table {
+        min-width: 750px;
+    }
+}
+/* ==========================================
+   OWNERS MANAGEMENT
+========================================== */
+
+.owners-section {
+    display: none;
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.owners-section .section-header {
+    margin-bottom: 25px;
+}
+
+.owners-section .section-header h2 {
+    margin-bottom: 5px;
+}
+
+.owners-section .section-header p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* OWNER STAT CARDS */
+
+.owner-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.owner-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fc;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+}
+
+.owner-stat-card i {
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+.owner-stat-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.owner-stat-card h2 {
+    margin: 5px 0 0;
+}
+
+
+/* OWNER TABLE */
+
+.owners-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.owners-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.owners-table th {
+    padding: 14px;
+    text-align: left;
+    background: #f5f6fa;
+    font-size: 14px;
+}
+
+.owners-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+
+/* STATUS */
+
+.owner-verified {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.owner-pending {
+    background: #fef3c7;
+    color: #b45309;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.owner-rejected {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* APPROVE */
+
+.approve-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.approve-btn:hover {
+    background: #16a34a;
+}
+
+
+/* REJECT */
+
+.reject-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.reject-btn:hover {
+    background: #dc2626;
+}
+
+
+/* BLOCK */
+
+.owner-block-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.owner-block-btn:hover {
+    background: #dc2626;
+}
+
+
+/* UNBLOCK */
+
+.owner-unblock-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.owner-unblock-btn:hover {
+    background: #16a34a;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .owner-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+

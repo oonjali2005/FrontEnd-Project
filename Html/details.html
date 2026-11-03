@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VYORA | Vehicle Details</title>
+
+    <link rel="stylesheet" href="../Css/details.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <a href="home.html">
+
+                <img src="../assets/logo.png" alt="Logo">
+
+            </a>
+
+            <h2>VYORA</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="explore.html">Explore</a></li>
+
+            <li><a href="offers.html">Offers</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= DETAILS ================= -->
+
+    <section class="details">
+
+        <!-- LEFT -->
+
+        <div class="left">
+
+            <img id="vehicleImage" src="" alt="Vehicle">
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="right">
+
+            <h1 id="vehicleName"></h1>
+
+            <div class="rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span id="vehicleRating"></span>
+
+            </div>
+
+            <h2 id="vehiclePrice"></h2>
+
+            <div class="specs">
+
+                <p>
+
+                    <i class="fa-solid fa-gas-pump"></i>
+
+                    Fuel :
+
+                    <span id="vehicleFuel"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    Transmission :
+
+                    <span id="vehicleTransmission"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-users"></i>
+
+                    Seats :
+
+                    <span id="vehicleSeats"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    Color :
+
+                    <span id="vehicleColor"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-road"></i>
+
+                    Mileage :
+
+                    <span id="vehicleMileage"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Pickup :
+
+                    <span id="vehicleLocation"></span>
+
+                </p>
+
+            </div>
+
+            <h3>Features</h3>
+
+            <ul class="features">
+
+                <li>✔ Air Conditioner</li>
+
+                <li>✔ Bluetooth Music</li>
+
+                <li>✔ GPS Navigation</li>
+
+                <li>✔ USB Charging</li>
+
+                <li>✔ Reverse Camera</li>
+
+                <li>✔ Air Bags</li>
+
+            </ul>
+
+            <h3>Description</h3>
+
+            <p id="vehicleDescription"></p>
+
+            <div class="buttons">
+
+                <button id="bookBtn">
+
+                    Book Now
+
+                </button>
+
+                <button onclick="history.back()">
+
+                    Back
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>VYORA</h2>
+
+        <p>One Platform. Every Ride.</p>
+
+        <p>© 2026 All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="../Js/details.js"></script>
+
+</body>
+
+</html>

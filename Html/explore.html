@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYORA | Explore</title>
+
+    <link rel="stylesheet" href="../Css/explore.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="../assets/logo.png" alt="Logo">
+<h2>VYORA</h2>
+</div>
+
+<div class="search-bar">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="Search Vehicles">
+</div>
+
+<div class="nav-menu">
+
+<ul>
+
+<li><a href="home.html">Home</a></li>
+
+<li><a href="explore.html" class="active">Explore</a></li>
+
+<li><a href="offers.html">Offers</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="profile">
+
+<i class="fa-solid fa-circle-user"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="explore-hero">
+
+<h1>Explore Our Premium Vehicles</h1>
+
+<p>
+Choose the perfect vehicle for every journey.
+</p>
+
+</section>
+
+<!-- FILTER -->
+
+<section class="filter">
+
+<div class="filter-box">
+
+<select>
+
+<option>All Vehicles</option>
+
+<option>Cars</option>
+
+<option>Bikes</option>
+
+<option>Scooters</option>
+
+</select>
+
+<input type="date">
+
+<select>
+
+<option>Price</option>
+
+<option>Low to High</option>
+
+<option>High to Low</option>
+
+</select>
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+
+</div>
+
+</section>
+<vechile list>
+
+<section class="vehicles">
+
+    <h2>Available Vehicles</h2>
+
+    <div class="vehicle-grid">
+
+        <!-- CAR 1 -->
+        <div class="vehicle-card">
+            <img src="../assets/hyundai.webp" alt="Hyundai Creta">
+
+            <div class="vehicle-info">
+                <h3>Hyundai Creta</h3>
+
+                <div class="rating">
+                    ⭐ 4.8
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                    <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+                </div>
+
+                <h4>₹250 / Hour</h4>
+
+                <div class="btn-group">
+                <button class="view-btn" onclick="window.location.href='details.html?vehicle=creta'">View Details
+                </button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAR 2 -->
+        <div class="vehicle-card">
+            <img src="../assets/kia.avif" alt="Kia Seltos">
+
+            <div class="vehicle-info">
+                <h3>Kia Seltos</h3>
+
+                <div class="rating">
+                    ⭐ 4.9
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Diesel</span>
+                    <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                    <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+                </div>
+
+                <h4>₹300 / Hour</h4>
+
+                <div class="btn-group">
+                   <button class="view-btn" onclick="window.location.href='details.html?vehicle=seltos'">
+    View Details
+</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIKE -->
+        <div class="vehicle-card">
+            <img src="../assets/yr15.jpg" alt="R15">
+
+            <div class="vehicle-info">
+                <h3>Yamaha R15 V4</h3>
+
+                <div class="rating">
+                    ⭐ 4.7
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fa-solid fa-gears"></i> Manual</span>
+                    <span><i class="fa-solid fa-user"></i> 2 Seats</span>
+                </div>
+
+                <h4>₹120 / Hour</h4>
+
+                <div class="btn-group">
+                    <button class="view-btn" onclick="window.location.href='details.html?vehicle=r15'">
+    View Details
+</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIKE -->
+        <div class="vehicle-card">
+            <img src="../assets/ktm duke.jpg" alt="Duke">
+
+            <div class="vehicle-info">
+                <h3>KTM Duke 390</h3>
+
+                <div class="rating">
+                    ⭐ 4.8
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fa-solid fa-gears"></i> Manual</span>
+                    <span><i class="fa-solid fa-user"></i> 2 Seats</span>
+                </div>
+
+                <h4>₹150 / Hour</h4>
+
+                <div class="btn-group">
+                    <button class="view-btn"  onclick="window.location.href='details.html?vehicle=duke'">
+    View Details
+</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCOOTER -->
+        <div class="vehicle-card">
+            <img src="../assets/scooty.jpg" alt="Activa">
+
+            <div class="vehicle-info">
+                <h3>Honda Activa 6G</h3>
+
+                <div class="rating">
+                    ⭐ 4.6
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                    <span><i class="fa-solid fa-user"></i> 2 Seats</span>
+                </div>
+
+                <h4>₹80 / Hour</h4>
+
+                <div class="btn-group">
+                    <button class="view-btn"  onclick="window.location.href='details.html?vehicle=activa'">
+    View Details
+</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCOOTER -->
+        <div class="vehicle-card">
+            <img src="../assets/tvs.webp" alt="Ntorq">
+
+            <div class="vehicle-info">
+                <h3>TVS Ntorq 125</h3>
+
+                <div class="rating">
+                    ⭐ 4.7
+                </div>
+
+                <div class="details">
+                    <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                    <span><i class="fa-solid fa-user"></i> 2 Seats</span>
+                </div>
+
+                <h4>₹90 / Hour</h4>
+
+                <div class="btn-group">
+                    <button class="view-btn"  onclick="window.location.href='details.html?vehicle=ntorq'">
+    View Details
+</button>
+                    <button class="book-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../Js/explore.js"></script>
+
+</body>
+
+</html>

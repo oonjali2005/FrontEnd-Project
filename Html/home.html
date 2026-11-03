@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYORA | Home</title>
+
+    <link rel="stylesheet" href="../Css/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="../assets/logo.png" alt="logo">
+
+<h2>VYORA</h2>
+
+</div>
+
+<div class="search-bar">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Cars, Bikes, Scooters">
+
+</div>
+
+<div class="nav-menu">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="explore.html">Explore</a></li>
+
+<li><a href="offers.html">Offers</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="profile">
+
+<i class="fa-solid fa-circle-user"></i>
+
+<div class="dropdown">
+
+<a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a>
+
+<a href="#"><i class="fa-solid fa-calendar-check"></i> My Bookings</a>
+
+<a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+
+<a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+
+<a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+
+</div>
+
+</div>
+<!-- SOS BUTTON -->
+
+<button id="sosBtn" class="sos-btn">
+    🆘 SOS
+</button>
+
+<!-- SOS POPUP -->
+
+<div id="sosPopup" class="sos-popup">
+
+    <div class="sos-box">
+
+        <span id="closeSos" class="close-sos">&times;</span>
+
+        <h2>🚨 Emergency SOS</h2>
+
+        <p>Are you in an emergency?</p>
+
+        <button class="emergency-btn" onclick="callEmergency()">
+            📞 Call Emergency
+        </button>
+
+        <button class="location-btn" onclick="shareLocation()">
+            📍 Share Location
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+
+Your Journey
+
+<span>Starts Here</span>
+
+</h1>
+
+<p>
+
+Rent Premium Cars, Bikes & Scooters
+
+Anytime • Anywhere
+
+</p>
+
+<div class="hero-btn">
+
+<button class="explore" onclick="window.location.href='explore.html'">
+    Explore Vehicles
+</button>
+
+<button class="book" onclick="window.location.href='explore.html'">
+
+Book Now
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="../assets/home.png" alt="Hero">
+
+</div>
+
+</section>
+
+<!-- ================= CATEGORY ================= -->
+
+<section class="category">
+
+<h2>Choose Your Ride</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-car"></i>
+
+<h3>Cars</h3>
+
+<p>Luxury & Family Cars</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-motorcycle"></i>
+
+<h3>Bikes</h3>
+
+<p>Sports & City Bikes</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moped"></i>
+
+<h3>Scooters</h3>
+
+<p>Easy Daily Commute</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURED ================= -->
+
+<section class="featured">
+
+<h2>Featured Vehicles</h2>
+
+<div class="vehicle-container">
+
+<div class="vehicle-card">
+
+<img src="../assets/car.jpg">
+
+<h3>Hyundai Creta</h3>
+
+<p>₹250 / Hour</p>
+
+<button onclick="window.location.href='details.html?vehicle=creta'">
+    View Details
+</button>
+
+</div>
+
+<div class="vehicle-card">
+
+<img src="../assets/bike.jpg">
+
+<h3>Yamaha R15</h3>
+
+<p>₹120 / Hour</p>
+<button onclick="window.location.href='details.html?vehicle=r15'">
+    View Details
+</button>
+
+</div>
+
+<div class="vehicle-card">
+
+<img src="../assets/scooty.jpg">
+
+<h3>Honda Activa</h3>
+
+<p>₹70 / Hour</p>
+
+<button onclick="window.location.href='details.html?vehicle=activa'">
+    View Details
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2>Why Choose VYORA?</h2>
+
+<div class="why-box">
+
+<div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Secure Booking</h3>
+
+<p>OTP verified booking process.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Affordable</h3>
+
+<p>Best rental prices.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>24/7 Support</h3>
+
+<p>We're always here.</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Easy Pickup</h3>
+
+<p>Multiple pickup locations.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="offers">
+
+<h2>Trending Offers</h2>
+
+<div class="offer-container">
+
+<div class="offer-card">
+
+<h3>20% OFF</h3>
+
+<p>Cars</p>
+
+</div>
+
+<div class="offer-card">
+
+<h3>Weekend Offer</h3>
+
+<p>Bikes</p>
+
+</div>
+
+<div class="offer-card">
+
+<h3>Free Helmet</h3>
+
+<p>Bike Rentals</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>VYORA</h2>
+
+<p>One Platform. Every Ride.</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script src="../Js/home.js"></script>
+
+</body>
+</html>

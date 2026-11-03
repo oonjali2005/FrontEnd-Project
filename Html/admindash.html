@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VYORA | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../Css/admindash.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="admin-logo">
+
+            <img src="../assets/logo.png" alt="VYORA">
+
+            <h2>VYORA</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <span>Users</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user-tie"></i>
+                <span>Owners</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-car"></i>
+                <span>Vehicles</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Bookings</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-ban"></i>
+                <span>Cancellations</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Complaints</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                <span>SOS Requests</span>
+            </li>
+
+            <li class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Admin Dashboard</h1>
+
+                <p>Welcome back, Admin 👋</p>
+
+            </div>
+
+            <div class="admin-profile">
+
+                <i class="fa-solid fa-circle-user"></i>
+
+                <span>Admin</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- STAT CARDS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+
+                    <p>Total Users</p>
+
+                    <h2>120</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <div>
+
+                    <p>Total Owners</p>
+
+                    <h2>25</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-car"></i>
+
+                <div>
+
+                    <p>Total Vehicles</p>
+
+                    <h2>48</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <div>
+
+                    <p>Total Bookings</p>
+
+                    <h2>86</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXTRA STATS -->
+
+        <section class="info-grid">
+
+            <div class="info-card">
+
+                <h3>💰 Total Revenue</h3>
+
+                <h1>₹45,000</h1>
+
+                <p>This Month</p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>❌ Cancelled Bookings</h3>
+
+                <h1>12</h1>
+
+                <p>This Month</p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>🆘 SOS Requests</h3>
+
+                <h1>3</h1>
+
+                <p>Need Attention</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT BOOKINGS -->
+
+        <section class="recent">
+
+            <div class="section-header">
+
+                <h2>Recent Bookings</h2>
+
+                <button>View All</button>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+                        <th>Vehicle</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Anjali</td>
+
+                        <td>Hyundai Creta</td>
+
+                        <td>09 Aug 2026</td>
+
+                        <td>₹2500</td>
+
+                        <td>
+                            <span class="confirmed">
+                                Confirmed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Priya</td>
+
+                        <td>Yamaha R15</td>
+
+                        <td>09 Aug 2026</td>
+
+                        <td>₹1200</td>
+
+                        <td>
+                            <span class="pending">
+                                Pending
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Rahul</td>
+
+                        <td>Kia Seltos</td>
+
+                        <td>08 Aug 2026</td>
+
+                        <td>₹3000</td>
+
+                        <td>
+                            <span class="completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+            </section>
+
+
+    <!-- ================= USERS MANAGEMENT ================= -->
+
+    <section class="users-section" id="usersSection">
+
+        <div class="section-header">
+            <div>
+                <h2>Users Management</h2>
+                <p>Manage all registered VYORA users</p>
+            </div>
+        </div>
+
+        <!-- USER SUMMARY -->
+
+        <div class="user-stats">
+
+            <div class="user-stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <p>Total Users</p>
+                    <h2>120</h2>
+                </div>
+
+            </div>
+
+
+            <div class="user-stat-card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <div>
+                    <p>Active Users</p>
+                    <h2>112</h2>
+                </div>
+
+            </div>
+
+
+            <div class="user-stat-card">
+
+                <i class="fa-solid fa-user-lock"></i>
+
+                <div>
+                    <p>Blocked Users</p>
+                    <h2>8</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- USERS TABLE -->
+
+        <div class="users-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>User</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Bookings</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Anjali</td>
+                        <td>9876543210</td>
+                        <td>anjali@gmail.com</td>
+                        <td>5</td>
+
+                        <td>
+                            <span class="user-active">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="block-btn">
+                                Block
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Priya</td>
+                        <td>9876501234</td>
+                        <td>priya@gmail.com</td>
+                        <td>3</td>
+
+                        <td>
+                            <span class="user-active">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="block-btn">
+                                Block
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Rahul</td>
+                        <td>9876512345</td>
+                        <td>rahul@gmail.com</td>
+                        <td>8</td>
+
+                        <td>
+                            <span class="user-blocked">
+                                Blocked
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="unblock-btn">
+                                Unblock
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+    <!-- ================= OWNERS MANAGEMENT ================= -->
+
+<section class="owners-section" id="ownersSection">
+
+    <div class="section-header">
+
+        <div>
+            <h2>Owners Management</h2>
+            <p>Manage and verify all registered VYORA vehicle owners</p>
+        </div>
+
+    </div>
+
+
+    <!-- OWNER SUMMARY -->
+
+    <div class="owner-stats">
+
+        <div class="owner-stat-card">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <div>
+                <p>Total Owners</p>
+                <h2>25</h2>
+            </div>
+
+        </div>
+
+
+        <div class="owner-stat-card">
+
+            <i class="fa-solid fa-user-check"></i>
+
+            <div>
+                <p>Verified Owners</p>
+                <h2>20</h2>
+            </div>
+
+        </div>
+
+
+        <div class="owner-stat-card">
+
+            <i class="fa-solid fa-user-clock"></i>
+
+            <div>
+                <p>Pending Verification</p>
+                <h2>5</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- OWNERS TABLE -->
+
+    <div class="owners-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Owner</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Vehicles</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>Kumar</td>
+                    <td>9876543210</td>
+                    <td>kumar@gmail.com</td>
+                    <td>3</td>
+
+                    <td>
+                        <span class="owner-verified">
+                            Verified
+                        </span>
+                    </td>
+
+                    <td>
+                        <button class="owner-block-btn">
+                            Block
+                        </button>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Arjun</td>
+                    <td>9876501234</td>
+                    <td>arjun@gmail.com</td>
+                    <td>2</td>
+
+                    <td>
+                        <span class="owner-pending">
+                            Pending
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="approve-btn">
+                            Approve
+                        </button>
+
+                        <button class="reject-btn">
+                            Reject
+                        </button>
+
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Priya</td>
+                    <td>9876512345</td>
+                    <td>priya@gmail.com</td>
+                    <td>1</td>
+
+                    <td>
+                        <span class="owner-pending">
+                            Pending
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="approve-btn">
+                            Approve
+                        </button>
+
+                        <button class="reject-btn">
+                            Reject
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<script src="../Js/admindash.js"></script>
+
+    </main>
+
+
+    <script src="../Js/admindash.js"></script>
+
+</body>
+
+</html>
